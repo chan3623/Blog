@@ -1,0 +1,397 @@
+main {
+  width: 100vw;
+  height: auto;
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+main .page {
+  width: 100%;
+  height: 100vh;
+}
+
+main .section1 .nameContainer {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .section1 .nameContainer h1 {
+  font-size: 200px;
+  color: #212121;
+  text-align: center;
+}
+
+main .section1 .textContainer {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .section1 .textContainer p {
+  font-size: 30px;
+  font-weight: bold;
+  color: #313131;
+  text-align: center;
+}
+
+main .section1 .textContainer .scrollIcon {
+  width: 38px;
+  height: 50px;
+  background-image: url("../icons/scroll_icon.svg");
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  transition: all 0.3s;
+  animation: dung 1.7s linear infinite;
+}
+
+main .section1 .textContainer .scrollIcon:hover {
+  opacity: 0.5;
+  animation: none;
+}
+
+@keyframes dung {
+  0% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+main .section2 {
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .section2 .contentContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .section2 .contentContainer .imageContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+main .section2 .contentContainer .imageContainer img {
+  width: 600px;
+  height: auto;
+  background-size: contain;
+  background-position: center center;
+}
+
+main .section2 .infoContainer {
+  width: 50%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+main .section2 .infoContainer .myInfoContainer p {
+  color: #212121;
+  font-size: 40px;
+}
+
+main .section2 .infoContainer .myInfoContainer p span {
+  color: #387ADF;
+}
+
+main .section2 .infoContainer .container1 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+main .section2 .infoContainer .container2 {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 410px;
+}
+
+main .section2 .infoContainer .container3 {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+}
+
+main .section2 .infoContainer .container4 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+
+main .section2 .infoContainer .nameContainer {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+
+main .section2 .infoContainer .nameContainer p {
+  width: 100%;
+  text-align: center;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 240px;
+}
+
+main .section3 .frontContainer {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-start;
+  align-items: center;
+}
+
+main .section3 .frontContainer ul {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+main .section3 .frontContainer ul li {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .section3 .frontContainer ul li img {
+  width: 60%;
+  height: 60%;
+}
+
+main .section3 .frontContainer ul li p {
+  color: #212121;
+  font-size: 16px;
+  border-bottom: 3px solid #333;
+  padding: 5px;
+}
+
+main .section3 .skillContainer {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .section3 .skillContainer p {
+  color: #313131;
+  font-size: 100px;
+}
+
+main .section3 .backContainer {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+main .section3 .backContainer ul {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+main .section3 .backContainer ul li {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .section3 .backContainer ul li img {
+  width: 60%;
+  height: 60%;
+}
+
+main .section3 .backContainer ul li p {
+  padding: 5px;
+  border-bottom: 3px solid #333;
+  color: #212121;
+  font-size: 16px;
+}
+
+main .section4 .titleContainer {
+  padding: 50px;
+}
+
+main .section4 .titleContainer h2 {
+  color: #212121;
+  font-size: 60px;
+}
+
+main .section4 .contentSelectBox {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main .section4 .contentSelectBox ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #333;
+}
+
+main .section4 .contentSelectBox ul li {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border: 1px solid #212121;
+}
+
+main .section4 .portContentBox .portfolioContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .section4 .portContentBox .portfolioContainer .imageContainer {
+  width: 700px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .section4 .portContentBox .portfolioContainer .imageContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+main .section4 .portContentBox .portfolioContainer .infoContainer {
+  width: 35%;
+  height: 400px;
+}
+
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .titleAndSkillContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .titleAndSkillContainer h3 {
+  color: #212121;
+  font-size: 44px;
+}
+
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .titleAndSkillContainer .skillContainer {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .titleAndSkillContainer .skillContainer li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .titleAndSkillContainer .skillContainer li p {
+  color: #313131;
+  font-size: 22px;
+}
+
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .textConatiner {
+  width: 80%;
+  margin-top: 50px;
+}
+
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .textConatiner p {
+  color: #313131;
+  font-size: 24px;
+}
+
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .btnContainer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  margin-top: auto;
+}
+
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .btnContainer button {
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  outline: 0;
+  border: 1.5px solid #313131;
+  color: #313131;
+  transition: all 0.3s;
+}
+
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .btnContainer button:hover {
+  background-color: #313131;
+  color: #fefefe;
+}
+
+
+
+/*# sourceMappingURL=index.css.map */

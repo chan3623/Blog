@@ -1,0 +1,539 @@
+main {
+  width: 100vw;
+  height: auto;
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+main .page {
+  width: 100%;
+  height: 100vh;
+}
+main .section1 .nameContainer {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section1 .nameContainer h1 {
+  font-size: 70px;
+  color: #212121;
+  text-align: center;
+}
+main .section1 .textContainer {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section1 .textContainer p {
+  font-size: 30px;
+  font-weight: bold;
+  color: #313131;
+  text-align: center;
+}
+main .section1 .textContainer .scrollIcon {
+  width: 38px;
+  height: 50px;
+  background-image: url("../icons/scroll_icon.svg");
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  transition: all 0.3s;
+  animation: dung 1.7s linear infinite;
+}
+main .section1 .textContainer .scrollIcon:hover {
+  opacity: 0.5;
+  animation: none;
+}
+@keyframes dung {
+  0% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+main .section2 {
+  height: auto;
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+main .section2 .contentContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+main .section2 .contentContainer .imageContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+main .section2 .contentContainer .imageContainer img {
+  width: 250px;
+  height: auto;
+  background-size: contain;
+  background-position: center center;
+}
+main .section2 .nameContentContainer {
+  width: 100%;
+}
+main .section2 .nameContentContainer .nameContainer {
+  width: 100%;
+  padding: 10px;
+}
+main .section2 .nameContentContainer .nameContainer p {
+  text-align: center;
+  color: #212121;
+  font-size: 45px;
+}
+main .section2 .nameContentContainer .nameContainer p span {
+  color: #387ADF;
+}
+main .section2 .infoContainer {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+main .section2 .infoContainer .myInfoContainer p {
+  color: #212121;
+  font-size: 30px;
+}
+main .section2 .infoContainer .myInfoContainer p span {
+  color: #387ADF;
+}
+main .section2 .infoContainer .container1 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+main .section2 .infoContainer .container2 {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  width: 410px;
+}
+main .section2 .infoContainer .container3 {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+}
+main .section2 .infoContainer .container4 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+}
+main .section3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .section3 .frontContainer {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-start;
+  align-items: center;
+  position: relative;
+}
+main .section3 .frontContainer .frontTitle {
+  font-size: 50px;
+  color: #313131;
+  position: absolute;
+  top: 67%;
+  right: 4%;
+}
+main .section3 .frontContainer ul {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 3px solid #212121;
+}
+main .section3 .frontContainer ul li {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section3 .frontContainer ul li img {
+  width: 50%;
+  height: auto;
+}
+main .section3 .frontContainer ul li p {
+  color: #212121;
+  font-size: 12px;
+  padding: 5px;
+}
+main .section3 .backContainer {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+main .section3 .backContainer .backTitle {
+  font-size: 50px;
+  color: #313131;
+  position: absolute;
+  top: 67%;
+  left: 7%;
+}
+main .section3 .backContainer ul {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 3px solid #212121;
+}
+main .section3 .backContainer ul li {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section3 .backContainer ul li img {
+  width: 50%;
+  height: auto;
+}
+main .section3 .backContainer ul li p {
+  padding: 5px;
+  color: #212121;
+  font-size: 12px;
+}
+main .section4 .titleContainer {
+  padding: 10% 0 0 10%;
+}
+main .section4 .titleContainer h2 {
+  color: #212121;
+  font-size: 30px;
+}
+main .section4 .contentSelectBox {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+main .section4 .contentSelectBox ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+main .section4 .contentSelectBox ul li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section4 .contentSelectBox ul li .matrix {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #CDEEFF;
+  cursor: pointer;
+}
+main .section4 .contentSelectBox ul li .line {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: #4B655A;
+  border: 0.5px solid #d0d0d0;
+  cursor: pointer;
+}
+main .section4 .contentSelectBox ul li .home {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: #A3A19E;
+  border: 0.5px solid #d0d0d0;
+  cursor: pointer;
+}
+main .section4 .contentSelectBox ul li .music {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: #212121;
+  border: 0.5px solid #d0d0d0;
+  cursor: pointer;
+}
+main .section4 .contentSelectBox ul li .graph {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: #5c8eff;
+  border: 0.5px solid #d0d0d0;
+  cursor: pointer;
+}
+main .section4 .contentSelectBox ul li .public {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: #CDEEFF;
+  border: 0.5px solid #d0d0d0;
+  cursor: pointer;
+}
+main .section4 .contentSelectBox ul .firstLi {
+  border: 1px solid #d0d0d0;
+}
+main .section4 .portContentBox {
+  width: 100%;
+  margin: 0 auto;
+}
+main .section4 .portContentBox .portfolioContainer {
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section4 .portContentBox .portfolioContainer .imageContainer {
+  width: 50%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section4 .portContentBox .portfolioContainer .imageContainer img {
+  width: 350px;
+  height: auto;
+}
+main .section4 .portContentBox .portfolioContainer .infoContainer {
+  width: 100%;
+  height: 300px;
+}
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .titleAndSkillContainer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .titleAndSkillContainer h3 {
+  color: #212121;
+  font-size: 30px;
+}
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .titleAndSkillContainer .skillContainer {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .titleAndSkillContainer .skillContainer li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .titleAndSkillContainer .skillContainer li p {
+  color: #313131;
+  font-size: 16px;
+}
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .textConatiner {
+  width: 80%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .textConatiner p {
+  color: #313131;
+  font-size: 16px;
+}
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .btnContainer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: auto;
+}
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .btnContainer .pptMove {
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1.5px solid #313131;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .btnContainer .pptMove:hover {
+  background-color: #313131;
+  color: #fefefe;
+}
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .btnContainer .pptMove:hover a {
+  color: #fefefe;
+}
+main .section4 .portContentBox .portfolioContainer .infoContainer .pofolContainer .btnContainer .pptMove a {
+  padding: 50px;
+  text-decoration: none;
+  color: #313131;
+}
+main .section4 .lineGraph {
+  display: none;
+}
+main .section4 .homeDashBoard {
+  display: none;
+}
+main .section4 .musicPlayer {
+  display: none;
+}
+main .section4 .graphCalculator {
+  display: none;
+}
+main .section5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section5 .connectContainer {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+main .section5 .connectContainer .titleContainer {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section5 .connectContainer .titleContainer h2 {
+  color: #313131;
+  font-size: 36px;
+}
+main .section5 .connectContainer .contentsContainer {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section5 .connectContainer .contentsContainer .iconContainer {
+  width: 33.3333333333%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section5 .connectContainer .contentsContainer .iconContainer .phoneIcon {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: url("../icons/phone_icon.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+main .section5 .connectContainer .contentsContainer .iconContainer .kakaoIcon {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: url("../icons/kakao_icon.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+main .section5 .connectContainer .contentsContainer .iconContainer .mailIcon {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: url("../icons/mail_icon.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+main .section5 .connectContainer .contentsContainer .iconContainer .myInfo {
+  height: 70px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d0d0d0;
+}
+main .section5 .connectContainer .contentsContainer .iconContainer .myInfo p {
+  font-size: 14px;
+}
+main .section5 .connectContainer .contentsContainer .iconContainer .myInfo div {
+  width: 60px;
+  height: 30px;
+  border: 1px solid #313131;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+main .section5 .connectContainer .contentsContainer .iconContainer .myInfo div:hover {
+  background-color: #212121;
+}
+main .section5 .connectContainer .contentsContainer .iconContainer .myInfo div:hover a {
+  color: #fefefe;
+}
+main .section5 .connectContainer .contentsContainer .iconContainer .myInfo div a {
+  outline: 0;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+/*# sourceMappingURL=index.css.map */

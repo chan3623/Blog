@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+html,
+body {
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body {
+  -ms-overflow-style: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img,
+fieldset {
+  border: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+button,
+a {
+  background-color: unset;
+  cursor: pointer;
+}
+
+main,
+header,
+section,
+nav,
+footer,
+aside,
+article,
+figure {
+  display: block;
+}
+
+
+
+/*# sourceMappingURL=default.css.map */
